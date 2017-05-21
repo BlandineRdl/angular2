@@ -14,7 +14,13 @@ export class AppComponent {
   }
 
   ngOnInit() {
-    this.hikes = this._hikeService.getHikes();
+    // this.hikes = this._hikeService.getHikes();
+    // il faut s'abonner via subscribe pour recuperer les données
+    this._hikeService.getHikesFromAPI()
+                     .subscribe(
+                       res => this.hikes = res,
+                       err => console.error(err.status)
+                     );
     console.log(this.hikes);
   }
 }
