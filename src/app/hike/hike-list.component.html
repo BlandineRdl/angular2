@@ -1,1 +1,7 @@
 <h2>Liste de randonnées</h2>
+
+<div *ngFor="let hike of hikes">
+  {{hike.name}} - {{hike.description}}
+  <br>
+  <br>
+</div>
