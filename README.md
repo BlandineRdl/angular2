@@ -1,3 +1,11 @@
-**Angular 4**
+**Angular 2**
 
-Projet Angular for learning.
+Project Angular for learning.
+
+- Creation Module / Component / Service
+- Routing
+- Custom Pipe
+- Forms
+
+
+by Udemy 'Angular 2 par la pratique'
