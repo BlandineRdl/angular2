@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { ActivatedRoute, Router} from "@angular/router";
+import { ActivatedRoute, Router } from "@angular/router";
 
 @Component({
   moduleId: module.id,
@@ -8,8 +8,7 @@ import { ActivatedRoute, Router} from "@angular/router";
 export class HikeDetailsComponent implements OnInit {
   title : string;
 
-  constructor(private _route: ActivatedRoute, private _router: Router) {
-  }
+  constructor(private _route: ActivatedRoute, private _router: Router) {}
 
   ngOnInit(){
     let id = this._route.snapshot.params['id'];

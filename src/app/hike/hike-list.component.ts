@@ -12,8 +12,7 @@ export class HikeListComponent {
   hikes: Hike[];
   searchTerm: string;
 
-  constructor(private _hikeService: HikeService) {
-  }
+  constructor(private _hikeService: HikeService) {}
 
   ngOnInit() {
     // this.hikes = this._hikeService.getHikes();

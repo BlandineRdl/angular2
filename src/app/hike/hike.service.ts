@@ -1,4 +1,4 @@
-import {Injectable} from "@angular/core";
+import { Injectable } from "@angular/core";
 import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/do';
@@ -9,10 +9,7 @@ import 'rxjs/add/operator/do';
 
 export class HikeService {
 
-  constructor(private _http:Http) {
-
-  }
-
+  constructor(private _http:Http) {}
 
   //getHikes() {
   // return this.hikes;

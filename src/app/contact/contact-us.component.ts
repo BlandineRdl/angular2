@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { NgForm } from '@angular/forms';
-import {ContactService} from "./contact.service";
+import { ContactService } from "./contact.service";
 
 @Component({
   moduleId: module.id,
@@ -8,9 +8,7 @@ import {ContactService} from "./contact.service";
 })
 export class ContactUsComponent {
 
-  constructor(private _contactService: ContactService) {
-
-  }
+  constructor(private _contactService: ContactService) {}
 
   sendMessage(form: NgForm) {
     this._contactService.postContactForm(form.value);
