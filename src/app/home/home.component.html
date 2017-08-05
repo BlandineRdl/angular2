@@ -2,4 +2,36 @@
 
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   Blanditiis culpa ducimus eius explicabo fugiat illum ipsum molestias nesciunt nihil,
-  numquam, odit officiis perspiciatis quasi similique sit unde, veritatis voluptatem. Natus?</p>
+  numquam, odit officiis perspiciatis quasi similique sit unde, veritatis voluptatem. Natus?
+</p>
+
+<button (click)="toggle()" *ngIf="open" class="btn btn-danger">fermer</button>
+<button (click)="toggle()" *ngIf="!open" class="btn btn-primary">ouvrir</button>
+
+<div [@toggleElement]="toggleElement">
+  Do you see any Teletubbies in here? Do you see a slender plastic tag clipped to my shirt with my name printed on it?
+  Do you see a little Asian child with a blank expression on his face sitting outside on a mechanical helicopter that
+  shakes when you put quarters in it? No? Well, that's what you see at a toy store. And you must think you're in a
+  toy store, because you're here shopping for an infant named Jeb.
+</div>
+
+<div class="row">
+  <h3>Citations</h3>
+  <div class="frame col-md-6">
+    <div class="citation" [@animateCitation]="animateCitation"
+                          (@animateCitation.start)="log($event)"
+                          (@animateCitation.done)="log($event)"
+    >
+      {{ quote.text}}
+      <br>
+      <em>{{ quote.author}}</em>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <a class="btn btn-primary" (click)="getPreviousQuote()">précédente</a>
+    <a class="btn btn-primary" (click)="getNextQuote()">suivante</a>
+  </div>
+</div>
