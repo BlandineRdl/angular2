@@ -22,6 +22,9 @@ export class HikeListComponent {
         res => this.hikes = res,
         err => console.error(err.status)
       );
-    console.log(this.hikes);
+  }
+
+  addToMyTodoHike(hikeToAdd: Hike) {
+    console.log(`rando ${hikeToAdd.name} ajoutée`);
   }
 }
