@@ -1,4 +1,4 @@
-**Angular 2**
+**Angular 4**
 
 Project Angular for learning.
 
@@ -6,6 +6,6 @@ Project Angular for learning.
 - Routing
 - Custom Pipe
 - Forms
-
+- Communications Parents <-> Childrens
 
 by Udemy 'Angular 2 par la pratique'
